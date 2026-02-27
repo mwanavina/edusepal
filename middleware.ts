@@ -17,11 +17,14 @@
 // })
 
 // Temporarily disabled auth middleware
+import { NextResponse } from 'next/server'
+
 export function middleware() {
-    // Pass through all requests for now
-  }
-  
-  export const config = {
+  // Pass through all requests for now
+  return NextResponse.next()
+}
+
+export const config = {
     matcher: [
     //   Skip Next.js internals and all static files
       '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
