@@ -165,14 +165,6 @@ export function HeroCarousel() {
           />
         ))}
       </div>
-
-      {/* Autoplay Indicator */}
-      {autoplay && (
-        <div className="absolute top-4 sm:top-6 right-4 sm:right-6 z-10 flex items-center gap-2">
-          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          <span className="text-white text-xs sm:text-sm font-medium">Auto</span>
-        </div>
-      )}
     </div>
   )
 }
